@@ -1,5 +1,7 @@
 **Status:** Archive (code is provided as-is, no updates expected)
 
+Status: All references to gs://lm-human-preferences/ should be updated to https://openaipublic.blob.core.windows.net/lm-human-preferences/labels. The code provided as is no longer works. Pull requests welcome
+
 # lm-human-preferences
 
 This repository contains code for the paper [Fine-Tuning Language Models from Human Preferences](https://arxiv.org/abs/1909.08593).  See also our [blog post](https://openai.com/blog/fine-tuning-gpt-2/).
