@@ -82,7 +82,7 @@ def cnndm_generator(mode, seed=0, shuffle=False, comm=None):
     # data originally from https://github.com/abisee/cnn-dailymail
     if mode == 'valid':
         mode = 'val'
-    with open(gcs.download_file_cached(f'gs://lm-human-preferences/datasets/cnndm/url_lists/all_{mode}.txt', comm=comm)) as f:
+    with open(gcs.download_file_cached(f'https://openaipublic.blob.core.windows.net/lm-human-preferences/datasets/cnndm/url_lists/all_{mode}.txt', comm=comm)) as f:
         urls = [line.strip() for line in f]
     if shuffle:
         random.seed(seed)
