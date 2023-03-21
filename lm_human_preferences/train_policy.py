@@ -426,7 +426,7 @@ def train(hparams: HParams):
         hyperparams.dump(m.hparams(), name='model_hparams')
 
         if save_dir:
-            if not save_dir.startswith('gs://'):
+            if not save_dir.startswith('https:'):
                 os.makedirs(os.path.join(save_dir, 'policy'), exist_ok=True)
             with tf.gfile.Open(os.path.join(save_dir, 'train_policy_hparams.json'), 'w') as f:
                 json.dump(hparams.to_nested_dict(), f, indent=2)

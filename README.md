@@ -1,6 +1,6 @@
 **Status:** Archive (code is provided as-is, no updates expected)
 
-**Status:** All references to `gs://lm-human-preferences/` should be updated to `https://openaipublic.blob.core.windows.net/lm-human-preferences/labels`.  The code provided as is no longer works.  Pull requests welcome
+Status: All references to gs://lm-human-preferences/ should be updated to https://openaipublic.blob.core.windows.net/lm-human-preferences/labels. The code provided as is no longer works. Pull requests welcome
 
 # lm-human-preferences
 

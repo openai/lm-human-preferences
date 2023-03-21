@@ -66,7 +66,7 @@ def get_train_reward_experiments():
     sentiment = combos(
         _books_task,
 
-        bind('labels.source', 'gs://lm-human-preferences/labels/sentiment/offline_5k.json'),
+        bind('labels.source', 'https://openaipublic.blob.core.windows.net/lm-human-preferences/labels/sentiment/offline_5k.json'),
         bind('labels.num_train', 4_992),
         bind('run.seed', 1)
     )
@@ -75,7 +75,7 @@ def get_train_reward_experiments():
     descriptiveness = combos(
         _books_task,
 
-        bind('labels.source', 'gs://lm-human-preferences/labels/descriptiveness/offline_5k.json'),
+        bind('labels.source', 'https://openaipublic.blob.core.windows.net/lm-human-preferences/labels/descriptiveness/offline_5k.json'),
         bind('labels.num_train', 4_992),
         bind('run.seed', 1)
     )
@@ -84,9 +84,9 @@ def get_train_reward_experiments():
         bind_nested('task', summarize_cnndm_task),
         _shared,
 
-        # bind('labels.source', 'gs://lm-human-preferences/labels/cnndm/offline_60k.json'),
+        # bind('labels.source', 'https://openaipublic.blob.core.windows.net/lm-human-preferences/labels/cnndm/offline_60k.json'),
         # bind('labels.num_train', 60_000),
-        bind('labels.source', 'gs://lm-human-preferences/labels/cnndm/online_45k.json'),
+        bind('labels.source', 'https://openaipublic.blob.core.windows.net/lm-human-preferences/labels/cnndm/online_45k.json'),
         bind('labels.num_train', 46_000),
 
         bind('batch_size', 2 * 8),
@@ -99,9 +99,9 @@ def get_train_reward_experiments():
         bind_nested('task', summarize_tldr_task),
         _shared,
 
-        # bind('labels.source', 'gs://lm-human-preferences/labels/tldr/offline_60k.json'),
+        # bind('labels.source', 'https://openaipublic.blob.core.windows.net/lm-human-preferences/labels/tldr/offline_60k.json'),
         # bind('labels.num_train', 60_000),
-        bind('labels.source', 'gs://lm-human-preferences/labels/tldr/online_45k.json'),
+        bind('labels.source', 'https://openaipublic.blob.core.windows.net/lm-human-preferences/labels/tldr/online_45k.json'),
         bind('labels.num_train', 46_000),
 
         bind('batch_size', 2 * 8),
