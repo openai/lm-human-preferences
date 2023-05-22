@@ -20,7 +20,7 @@ pytest-timeout = "==1.2.0"
 pytest = "==3.5.0"
 pytz = "==2019.1"
 regex = "==2017.4.5"
-requests = "==2.18.0"
+requests = "==2.31.0"
 tqdm = "==4.31.1"
 typeguard = ">=2.2.2"
 lm-human-preferences = {editable = true,path = "."}
